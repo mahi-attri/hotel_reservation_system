@@ -50,12 +50,7 @@ hotel-reservation/
 
 ## Deployment Instructions
 
-### Option 1: Netlify (Recommended)
-1. Create a Netlify account at https://netlify.com
-2. Drag and drop the `hotel-reservation` folder to Netlify
-3. Your site will be live instantly with a URL like: `https://your-site-name.netlify.app`
-
-### Option 2: Vercel
+### Vercel
 1. Install Vercel CLI: `npm install -g vercel`
 2. Navigate to project folder: `cd hotel-reservation`
 3. Run: `vercel`
@@ -105,12 +100,6 @@ hotel-reservation/
 - Fully responsive design
 - Modern browser features
 
-### Browser Compatibility
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-
 ### Performance
 - Instant booking calculation
 - Smooth animations
@@ -149,11 +138,3 @@ Travel Time: 2 minutes vertical (1 floor × 2)
 - Booking cancellation
 - Advanced filtering options
 
-## Author
-Created for Unstop SDE-3 Assessment
-
-## License
-MIT License - Free to use and modify
-
-## Support
-For questions or issues, contact: careers@unstop.com
