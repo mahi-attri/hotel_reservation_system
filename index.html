@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hotel Room Reservation System</h1>
+            <p class="subtitle">97 Rooms | 10 Floors | Smart Booking Algorithm</p>
+        </header>
+
+        <div class="controls">
+            <div class="input-group">
+                <label for="numRooms">Number of Rooms (1-5):</label>
+                <input type="number" id="numRooms" min="1" max="5" value="1">
+            </div>
+            <button id="bookBtn" class="btn btn-primary">Book Rooms</button>
+            <button id="randomBtn" class="btn btn-secondary">Random Occupancy</button>
+            <button id="resetBtn" class="btn btn-danger">Reset All</button>
+        </div>
+
+        <div id="bookingInfo" class="booking-info"></div>
+
+        <div class="hotel-container">
+            <div class="stairs-label">
+                <div class="stairs-icon">🚶‍♂️🪜</div>
+                <span>Stairs/Lift</span>
+            </div>
+            <div class="floors-container" id="floorsContainer"></div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="room-box available"></div>
+                <span>Available</span>
+            </div>
+            <div class="legend-item">
+                <div class="room-box occupied"></div>
+                <span>Occupied</span>
+            </div>
+            <div class="legend-item">
+                <div class="room-box newly-booked"></div>
+                <span>Newly Booked</span>
+            </div>
+        </div>
+
+        <div class="stats" id="stats">
+            <div class="stat-item">
+                <strong>Total Rooms:</strong> <span id="totalRooms">97</span>
+            </div>
+            <div class="stat-item">
+                <strong>Available:</strong> <span id="availableRooms">97</span>
+            </div>
+            <div class="stat-item">
+                <strong>Occupied:</strong> <span id="occupiedRooms">0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
